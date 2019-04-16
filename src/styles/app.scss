@@ -1,0 +1,150 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+// @font-face {
+//   font-family: "Muli-Regular";
+//   src: url("../assets/fonts/Muli-Regular.ttf") format("ttf");
+// }
+
+html {
+  font-size: 16px;
+}
+
+body {
+  // font-family: 'Muli-Regular', sans-serif;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+div,
+button,
+span,
+a {
+  // font-family: 'Muli-Regular', sans-serif;
+  font-family: sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.btn-link {
+  color: #005CA5;
+  &:hover {
+    color: #0095DD;
+  }
+}  
+
+.btn {
+  height: 2rem;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 5px 12px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+
+  &:active, &:hover, &:focus {
+    outline: none;
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #5e8ff9;
+  border-color: #5e8ff9;
+}
+
+.icon {
+  height: 15px;
+  width: 15px;
+}
+
+.valign-sub {
+  vertical-align: sub;
+}
+
+.spinner {
+  animation: spinner 1s linear infinite;
+  position: relative;
+  fill: white;
+  display: inline-flex;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.form-group {
+  margin-bottom: 1rem;
+
+  input {
+    overflow: visible;
+    margin: 0;
+  }
+
+  label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    color: #495057;
+  }
+
+  .form-control {
+    display: block;
+    padding: 0.6rem 0.6rem;
+    box-shadow: none;
+    width: 100%;
+    height: 2rem;
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+    &:focus {
+      color: #495057;
+      background-color: #fff;
+      border-color: #80bdff;
+      outline: 0;
+      box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+    }
+  }
+}
